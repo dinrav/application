@@ -1,0 +1,46 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.sap.build.standard.untitledPrototype.controller.Detail" xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:f="sap.ui.layout.form">
+			<Page title="{i18n>Detail}">
+				<content>
+					<f:SimpleForm id="SimpleFormDisplay354wide"
+						editable="false"
+						layout="ResponsiveGridLayout"
+						title="{i18n>detailTitle}"
+						labelSpanXL="4"
+						labelSpanL="3"
+						labelSpanM="4"
+						labelSpanS="12"
+						adjustLabelSpan="false"
+						emptySpanXL="0"
+						emptySpanL="4"
+						emptySpanM="0"
+						emptySpanS="0"
+						columnsXL="2"
+						columnsL="1"
+						columnsM="1"
+						singleContainerFullSize="false">
+						<f:content>
+							<Label text="{i18n>ID}" />
+							<Text id="ID" text="{ID}" />
+							<Label text="{i18n>Description}" />
+							<Text text="{Description}" />
+							<Label text="{i18n>Sum}" />
+							<Text text="{Sum}" />
+							<Label text="{i18n>Min}" />
+							<Input value="{Min}" id="MIN"/>
+							<Label text="{i18n>Max}" />
+							<Input value="{Max}" id="MAX"/>
+						</f:content>
+					</f:SimpleForm>
+				</content>
+				<footer>
+						<OverflowToolbar>
+							<Button text="{i18n>Save}" press="_onModelSavePress"/>
+							<Button text="{i18n>Delete}" press="_onModelRemovePress"/>
+						</OverflowToolbar>
+			</footer>	
+			</Page>
+</mvc:View>
+
+
